@@ -1,0 +1,75 @@
+.git
+.env
+.DS_Store
+airflow_settings.yaml
+__pycache__/
+astro
+.venv
+.astro/standalone/
+.astro/worktrees/
+airflow-webserver.pid
+webserver_config.py
+airflow.cfg
+airflow.db
+.astro/*.local.yml
+.astro/*.local.yaml
+
+**/.astro/dbt_metadata.json
+**/.astro/manifest.slim.json
+
+
+# Python cache
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Log files
+*.log
+
+# Environment variables and secrets
+.env.*
+!.env.example
+
+# Virtual environments
+venv/
+
+# Temporary files
+*.tmp
+
+# Astro generated files
+.astro/
+
+# Tidak diunggah: data dan seluruh kode World Bank
+data/worldbank/
+**/*worldbank*
+
+# Tidak diunggah: data dan seluruh kode ekspor-impor
+data/exportimport/
+**/*exportimport*
+**/*export_import*
+**/*ekspor*
+**/*impor*
+
+# World Bank: data dan seluruh kode terkait
+data/worldbank/
+dags/data/worldbank/
+dags/worldbank_pipeline.py
+dags/scripts/*worldbank*
+scripts/*worldbank*
+
+# Ekspor-impor: data dan seluruh kode terkait
+data/exportimport/
+dags/data/exportimport/
+dags/exportimport_pipeline.py
+dags/scripts/*exportimport*
+scripts/*exportimport*
+scripts/*export_import*
+
+# File yang belum diamankan dari kredensial
+dags/data/inflasi/raw/cari_vervar.py
+dags/scripts/extract_bps_neraca.py
+scripts/extract_bps_neraca.py
+data_science/analisis_idr.ipynb
+
+data_science/analisis_idr.ipynb
